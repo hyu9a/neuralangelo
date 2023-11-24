@@ -1,0 +1,7 @@
+ARG FROM_IMAGE
+FROM $FROM_IMAGE
+
+ENV HOME=/workspace
+WORKDIR /workspace
+RUN chown 42420:42420 /workspace
+USER 42420:42420
